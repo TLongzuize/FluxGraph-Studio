@@ -1,5 +1,5 @@
-name: FluxGraph Studio v0.1.0-alpha.1
-run-name: Deploy FluxGraph Studio v0.1.0-alpha.1
+name: FluxGraph Studio v0.1.0-alpha.1 - FluxGraph
+run-name: Deploy FluxGraph Studio v0.1.0-alpha.1 - FluxGraph
 
 on:
   push:
@@ -17,7 +17,7 @@ concurrency:
 
 jobs:
   build-and-deploy:
-    name: Deploy FluxGraph Studio v0.1.0-alpha.1
+    name: Deploy FluxGraph Studio v0.1.0-alpha.1 - FluxGraph
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -49,6 +49,6 @@ jobs:
         with:
           path: dist
 
-      - name: Deploy FluxGraph Studio v0.1.0-alpha.1
+      - name: Deploy FluxGraph Studio v0.1.0-alpha.1 - FluxGraph
         id: deployment
         uses: actions/deploy-pages@v4
