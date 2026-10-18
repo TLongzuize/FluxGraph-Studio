@@ -301,7 +301,7 @@ export default function App() {
         </div>
         <div className="header-notice" role="status">
           <span className="header-notice__indicator" aria-hidden="true" />
-          <span>Current pre-release: v{packageMetadata.version}</span>
+          <span>FluxGraph Studio is in Alpha. More features are coming soon!</span>
         </div>
         <div className="header__actions">
           <div className="source-switch" role="group" aria-label="Media workspace">
