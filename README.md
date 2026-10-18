@@ -99,7 +99,7 @@ Video shortcuts are inactive while the audio workspace is selected. Text and ran
 ### Install and run
 
 ```bash
-git clone https://github.com/TLongzuize/FluxGraph-Studio.git
+git clone --branch source-upload https://github.com/TLongzuize/FluxGraph-Studio.git
 cd FluxGraph-Studio
 npm ci
 npm run dev
