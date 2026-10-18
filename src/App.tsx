@@ -294,7 +294,6 @@ export default function App() {
           <div className="header__brand-copy">
             <div className="header__title-row">
               <h1 className="header__title">FluxGraph Studio</h1>
-              <span className="alpha-badge">Alpha</span>
               <span className="release-version">v{packageMetadata.version}</span>
             </div>
             <span className="header__tagline">Turn Media Into Motion.</span>
@@ -302,7 +301,7 @@ export default function App() {
         </div>
         <div className="header-notice" role="status">
           <span className="header-notice__indicator" aria-hidden="true" />
-          <span>FluxGraph Studio is in Alpha. More features are coming soon!</span>
+          <span>Current pre-release: v{packageMetadata.version}</span>
         </div>
         <div className="header__actions">
           <div className="source-switch" role="group" aria-label="Media workspace">

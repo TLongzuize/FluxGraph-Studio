@@ -13,6 +13,8 @@
 
 FluxGraph Studio analyzes locally selected media in your browser and renders it through a real-time Canvas 2D pipeline. Video and audio stay on your device; the app does not upload media to a server.
 
+**Current version:** [v0.1.0-alpha.1](https://github.com/TLongzuize/FluxGraph-Studio/releases/tag/v0.1.0-alpha.1) · Pre-release
+
 ## Highlights
 
 ### Video visualization
