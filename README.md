@@ -90,6 +90,17 @@ The video element is the playback timeline. Frame analysis produces a binary mas
 
 Video shortcuts are inactive while the audio workspace is selected. Text and range inputs retain their normal keyboard behavior.
 
+## Live Demo
+
+Try FluxGraph Studio right in your browser — no install required:
+
+| Platform | URL |
+| :--- | :--- |
+| **Vercel** | <a href="https://fluxgraph.vercel.app/" target="_blank" rel="noopener">https://fluxgraph.vercel.app/</a> |
+| **GitHub Pages** | <a href="https://tlongzuize.github.io/FluxGraph-Studio/" target="_blank" rel="noopener">https://tlongzuize.github.io/FluxGraph-Studio/</a> |
+
+Both deployments are updated automatically when `main` is pushed.
+
 ## Get started
 
 ### Requirements
