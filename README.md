@@ -125,10 +125,6 @@ The project includes a GitHub Actions workflow that runs `npm ci`, tests, and a 
 
 Vite is configured with the `/FluxGraph-Studio/` project-page base path so bundled scripts, styles, and FFmpeg assets resolve correctly when served from GitHub Pages.
 
-## Vercel
-
-Import `TLongzuize/FluxGraph-Studio` into Vercel with the Vite preset, root directory `.`, install command `npm ci`, build command `npm run build`, and output directory `dist`. Vite detects Vercel's `VERCEL=1` environment variable and uses `/` as the asset base; GitHub Pages and local builds continue to use `/FluxGraph-Studio/`.
-
 ## Privacy and compatibility
 
 - Video, audio, frame capture, and MP4 conversion are processed locally in the browser.
