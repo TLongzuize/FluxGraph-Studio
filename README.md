@@ -9,6 +9,10 @@
   <img alt="Vite 8" src="https://img.shields.io/badge/Vite-8-646cff?logo=vite&logoColor=white">
   <a href="LICENSE"><img alt="MIT License" src="https://img.shields.io/badge/License-MIT-18a999.svg"></a>
 </p>
+<p>
+  🚀 <a href="https://fluxgraph.vercel.app/" target="_blank" rel="noopener"><img alt="Live Demo (Vercel)" src="https://img.shields.io/badge/Live%20Demo-Vercel-78715c?logo=vercel&logoColor=white"></a>
+  🌐 <a href="https://tlongzuize.github.io/FluxGraph-Studio/" target="_blank" rel="noopener"><img alt="Live Demo (GitHub Pages)" src="https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-0969da?logo=github&logoColor=white"></a>
+</p>
 </div>
 
 FluxGraph Studio analyzes locally selected media in your browser and renders it through a real-time Canvas 2D pipeline. Video and audio stay on your device; the app does not upload media to a server.
