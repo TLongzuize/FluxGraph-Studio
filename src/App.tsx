@@ -5,7 +5,7 @@
    ─────────────────────────────────────────────── */
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Activity, Keyboard, Maximize, Minimize, Settings } from 'lucide-react';
+import { Activity, GitBranch, Keyboard, Maximize, Minimize, Settings } from 'lucide-react';
 import packageMetadata from '../package.json';
 import { CanvasDisplay } from './components/Canvas';
 import { AudioStudio } from './components/AudioStudio';
@@ -365,6 +365,17 @@ export default function App() {
               <Activity size={18} strokeWidth={1.8} aria-hidden="true" />
             </button>
           )}
+
+          <a
+            className="btn btn--ghost header-action-button"
+            href="https://github.com/TLongzuize/FluxGraph-Studio"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open FluxGraph Studio repository on GitHub"
+            title="View source on GitHub"
+          >
+            <GitBranch size={18} strokeWidth={1.8} aria-hidden="true" />
+          </a>
 
           {/* Fullscreen Button */}
           <button

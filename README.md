@@ -99,13 +99,13 @@ Video shortcuts are inactive while the audio workspace is selected. Text and ran
 ### Install and run
 
 ```bash
-git clone --branch source-upload https://github.com/TLongzuize/FluxGraph-Studio.git
+git clone https://github.com/TLongzuize/FluxGraph-Studio.git
 cd FluxGraph-Studio
 npm ci
 npm run dev
 ```
 
-Open the local URL printed by Vite. With the current Vite base configuration, it is `http://localhost:5173/FluxGraph/`.
+Open the local URL printed by Vite. With the current Vite base configuration, it is `http://localhost:5173/FluxGraph-Studio/`.
 
 ### Project scripts
 
@@ -121,7 +121,7 @@ Open the local URL printed by Vite. With the current Vite base configuration, it
 
 The project includes a GitHub Actions workflow that runs `npm ci`, tests, and a production build when `main` is updated, then deploys `dist/` to GitHub Pages. Set the repository's Pages source to **GitHub Actions**.
 
-Before deploying this project from `FluxGraph-Studio`, make the Vite `base` in `vite.config.ts` match the project-page path (normally `/FluxGraph-Studio/`). The current workspace value is `/FluxGraph/`; mismatched base paths can prevent bundled scripts, styles, and FFmpeg assets from loading.
+Vite is configured with the `/FluxGraph-Studio/` project-page base path so bundled scripts, styles, and FFmpeg assets resolve correctly when served from GitHub Pages.
 
 ## Privacy and compatibility
 

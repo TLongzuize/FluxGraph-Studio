@@ -183,6 +183,7 @@ function makeCanvas(): HTMLCanvasElement {
     id: 'main-canvas',
     width: 640,
     height: 480,
+    dataset: {},
     isConnected: true,
     getContext: vi.fn(() => context),
     getBoundingClientRect: () => ({
