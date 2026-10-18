@@ -5,7 +5,8 @@
    ─────────────────────────────────────────────── */
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Activity, GitBranch, Keyboard, Maximize, Minimize, Settings } from 'lucide-react';
+import { MarkGithubIcon } from '@primer/octicons-react';
+import { Activity, Keyboard, Maximize, Minimize, Settings } from 'lucide-react';
 import packageMetadata from '../package.json';
 import { CanvasDisplay } from './components/Canvas';
 import { AudioStudio } from './components/AudioStudio';
@@ -374,7 +375,7 @@ export default function App() {
             aria-label="Open FluxGraph Studio repository on GitHub"
             title="View source on GitHub"
           >
-            <GitBranch size={18} strokeWidth={1.8} aria-hidden="true" />
+            <MarkGithubIcon size={18} aria-hidden="true" />
           </a>
 
           {/* Fullscreen Button */}
