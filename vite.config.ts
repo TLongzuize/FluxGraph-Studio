@@ -4,7 +4,7 @@ import { defineConfig } from 'vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/FluxGraph-Studio/',
+  base: process.env.VERCEL === '1' ? '/' : '/FluxGraph-Studio/',
   build: {
     target: 'es2020',
     sourcemap: true,

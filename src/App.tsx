@@ -21,8 +21,6 @@ import { useVideoExport } from './hooks/useVideoExport';
 import { useVideoPlayback } from './hooks/useVideoPlayback';
 import { QUALITY_PRESETS, type MediaError, type RenderMode } from './types';
 
-const IS_DEV = import.meta.env.DEV;
-
 export default function App() {
   const appRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -351,8 +349,8 @@ export default function App() {
             <Keyboard size={18} strokeWidth={1.8} aria-hidden="true" />
           </button>}
 
-          {/* Dev Performance Overlay Toggle */}
-          {IS_DEV && activeSource === 'video' && (
+          {/* Performance Overlay Toggle */}
+          {activeSource === 'video' && (
             <button
               id="btn-perf"
               className={`btn btn--ghost header-action-button ${showPerf ? 'btn--primary' : ''}`}
@@ -411,7 +409,7 @@ export default function App() {
 
       <AudioStudio active={activeSource === 'audio'} onSwitchToVideo={() => handleSourceChange('video')} />
 
-      {/* Performance Overlay (dev only) */}
+      {/* Performance Overlay */}
       {activeSource === 'video' && <PerfOverlay stats={perfStats} visible={showPerf && state === 'playing'} />}
 
       {/* Settings Panel */}

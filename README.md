@@ -125,11 +125,25 @@ The project includes a GitHub Actions workflow that runs `npm ci`, tests, and a 
 
 Vite is configured with the `/FluxGraph-Studio/` project-page base path so bundled scripts, styles, and FFmpeg assets resolve correctly when served from GitHub Pages.
 
+## Vercel
+
+Import `TLongzuize/FluxGraph-Studio` into Vercel with the Vite preset, root directory `.`, install command `npm ci`, build command `npm run build`, and output directory `dist`. Vite detects Vercel's `VERCEL=1` environment variable and uses `/` as the asset base; GitHub Pages and local builds continue to use `/FluxGraph-Studio/`.
+
 ## Privacy and compatibility
 
 - Video, audio, frame capture, and MP4 conversion are processed locally in the browser.
 - Supported media formats depend on the browser's installed codecs. MP4, WebM, OGV, and MOV are offered for video; audio support depends on the browser.
 - MP4 conversion uses CPU and memory. Longer or higher-resolution recordings take longer to encode and require more memory.
+
+### Media Credits
+
+The "Bad Apple!!" media file used in this repository for testing and demonstration purposes belongs to its respective creators:
+* **Original Composition:** ZUN (Team Shanghai Alice) — *Touhou 4: Lotus Land Story*
+* **Remix & Arrangement:** Masayoshi Minoshima (Alstroemeria Records)
+* **Vocals:** nomico
+* **Shadow Art / Video:** Anira (あにら)
+
+*This asset is used under the Touhou Project Derivative Work Guidelines for non-commercial, open-source educational use.*
 
 ## License
 
